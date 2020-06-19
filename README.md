@@ -9,17 +9,17 @@ GiGA Genie Inside(이하, G-INSIDE)는 3rd party 개발자가 자신들의 제�
 '기가지니'를 올려서 음성인식과 자연어로 제어하고 기가지니가 제공하는 서비스(생활비서, 뮤직, 라디오 등)를 사용할 수 있도록 해줍니다.
 G-INSIDE는 기가지니가 탑재된 제품을 개발자들이 쉽게 만들 수 있도록 개발 도구와 문서, 샘플 소스 등 개발에 필요한 리소스를 제공합니다.
 
-# Prerequisites
+## Prerequisites
+* OS: Windows (7 > 권장)
+* Build Tool: Visual Studio 2019
+* [G-INSIDE Windows Device SDK](https://github.com/gigagenie/ginside-sdk/tree/master/g-sdk-windows)
+* [Gom Player](https://www.gomlab.com/download/) : 샘플 클라이언트의 미디어 플레이를 위해 설치 필요
 
 ## 인사이드 디바이스 키 발급
 
 1. [API Link](https://apilink.kt.co.kr) 에서 회원가입 
 2. 사업 제휴 신청 및 디바이스 등록 (Console > GiGA Genie > 인사이드 디바이스 등록)
 3. 디바이스 등록 완료 후 My Device에서 등록한 디바이스 정보 및 개발키 발급 확인 (Console > GiGA Genie > My Device)
-
-## 개발 환경
-*   OS: Windows (7 > 권장)
-*   Build Tool: Visual Studio 2019
 
 ## Window용 Sample 빌드
 - sample-client-windows를 다운로드 받고 디렉토리로 이동하여 솔루션 파일인 ginsidemfc-test.sln을 오픈한다.
@@ -74,3 +74,6 @@ Visual Studio에서 외부 라이브러리를 링크하는 방법에 대해서 �
 ## 라이선스
 
 **Sample Client Windows** is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
+sample-client-windows는 아래 라이브러리를 사용합니다.
+* cJSON : MIT license(https://github.com/DaveGamble/cJSON/blob/master/LICENSE)
